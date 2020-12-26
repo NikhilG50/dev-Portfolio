@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block contactactive %}active{% endblock contactactive %}
+{% block title %}Contact mee{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <h2 class=" my-3 align-items-center">Contact me </h2>
+        <form method="POST" action="/contact/">
+        {% csrf_token %}
+
+          <div class="mb-3 form-group">
+            <label for="name" >Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" >
+          </div>
+
+         <div class="mb-3">
+            <label for="email" >Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+
+         <div class="mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Number">
+         </div>
+
+         <div class="mb-3">
+            <label for="desc">Explain your concern</label>
+             <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+         </div>
+
+        <input class="btn btn-success wt-2" type="submit" value="Submit">
+        </form><br/> <br/>
+
+        <div class="container ">
+         <div class="row">
+                <div class="col-sm">
+                    <a href="https://www.facebook.com/nikhilg1093/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><strong>FaceBook</strong></a>
+                </div>
+
+                <div class="col-sm">
+                     <a href="https://github.com/NikhilG50" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><strong>GitHub</strong></a>
+                </div>
+
+                <div class="col-sm">
+                     <a href="https://www.linkedin.com/in/nikhil-g-207652165/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><strong>LinkedIn</strong></a>
+                </div>
+
+                <div class="col-sm">
+                     <a href="https://stackoverflow.com/users/11876887/nikhil-g" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><strong>StackOverflow</strong></a>
+                </div>
+
+                <div class="col-sm">
+                     <a href="https://twitter.com/NikhilG23087256" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><strong>Twitter</strong></a>
+                </div>
+             <div class="col-sm"></div>
+             <div class="col-sm"></div>
+             <div class="col-sm"></div>
+             <div class="col-sm"></div>
+         </div>
+        </div>
+    </div><br/><br/><br/>
+
+{% endblock body %}

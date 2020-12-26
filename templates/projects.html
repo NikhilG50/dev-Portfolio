@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block projectsactive %}active{% endblock projectsactive %}
+{% block title %}Projects{% endblock title %}
+
+{% block body %}
+
+    <div class="container my-3">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <h5 class="text-center">Trash Identification using Computer Vision</h5>
+            <img src="/static/img/trash_detection.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">In the first project a novel method was presented to detect plastics, papers, and metal with its location using TensorFlow API, and created GUI for that using the PYQT library.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <h5 class="text-center">Cable Defect Identification</h5>
+            <img src="/static/img/cable_defect.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">​ In the second This project I have given a cable to identify the length between two given points. I have tried with  Template matching to identify points that didn't perform well. Then I used Faster RCNN two identify points and measured distance using Euclidean distance. Last we created a simple UI to show which cable has the proper  length. This Project comes Under Automation using the AI domain.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <h5 class="text-center">Sentiment Analysis Prediction and API creation using Python Pyramid API</h5>
+              <img src="/static/img/sentement.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">This project is related to image classification. Where I collected images of 4-classes and used google Collab as a  runtime environment and improved accuracy using Resnet 200.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <h5 class="text-center">Image Classification</h5>
+              <img src="/static/img/image_classifictaion.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">This project is related to image classification. Where I collected images of 4-classes and used google Collab as a  runtime environment improved accuracy using Resnet 200.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div><br/><br/>
+
+{% endblock body %}
