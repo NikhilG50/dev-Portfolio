@@ -30,3 +30,7 @@ def contact(request):
 
 def internship(request):
     return render(request, "internship.html")
+
+
+def success(request):
+    return render(request, "success.html")
