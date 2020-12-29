@@ -18,7 +18,6 @@ def projects(request):
 
 
 def contact(request):
-    print('hii')
     return render(request, "contact.html")
 
 
