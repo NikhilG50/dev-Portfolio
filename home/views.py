@@ -21,8 +21,8 @@ def contact(request):
     return render(request, "contact.html")
 
 
-def internship(request):
-    return render(request, "internship.html")
+def experience(request):
+    return render(request, "experience.html")
 
 
 def success(request):

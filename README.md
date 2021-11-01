@@ -9,11 +9,14 @@ The objective of this project is to create an portfolio web api using Django, HT
   Firist you need to clone this repo and follow The below specified steps.
 
   Install `requirement.txt` using bellow specified command
-      `pip install requirements.txt`
+      `pip install requirements.txt` after that install postgresql
+      commands to install and configure postgresql in MacOs using HomeBrew
+      `install brew install postgresql`
+      `brew services start postgresql`
       
       This will install the Django Framework and reqired nessecary libraries.
 
-  After installing you can directly run `python3 manage.py run server` to intilize this repo.
+  After installing you can directly run `python3 manage.py runserver` to intilize this repo.
   
 
 ### Link to web application on heroku: https://portfolio--nikhil.herokuapp.com/
