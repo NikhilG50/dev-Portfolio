@@ -10,11 +10,11 @@ The objective of this project is to create an portfolio web api using Django, HT
 
   Install `requirement.txt` using bellow specified command
       `pip install requirements.txt` after that install postgresql
-      commands to install and configure postgresql in MacOs using HomeBrew
-      `install brew install postgresql`
+      Commands to install and configure postgresql in MacOs using HomeBrew
+      `brew install postgresql`
       `brew services start postgresql`
       
-      This will install the Django Framework and reqired nessecary libraries.
+  This will install the Django Framework and reqired nessecary libraries.
 
   After installing you can directly run `python3 manage.py runserver` to intilize this repo.
   
